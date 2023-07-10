@@ -17,12 +17,14 @@ const Footer = ({ next, question, answer }) => {
             d[question] = answer
             sessionStorage.setItem("answers", JSON.stringify(d))
         }
-        router.push('/quiz/' + next)
+        if (answer != "") {
+            router.push('/quiz/' + next)
+        }
     }
 
     return (
         <div className='w-screen bg-white flex flex-row justify-center items-center fixed bottom-0 left-0 z-20'>
-            <p className='bg-[#333333] text-[#dedccf] py-3 px-40 font-semibold rounded-[30px] cursor-pointer my-5' onClick={nextQuestion}>
+            <p className='bg-[#333333] text-[#dedccf] py-3 min-[500px]:px-40 px-20 font-semibold rounded-[30px] cursor-pointer my-5' onClick={nextQuestion}>
                 NEXT
             </p>
         </div>
