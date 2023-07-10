@@ -31,24 +31,24 @@ const First = () => {
         <div className='relative h-screen'>
             <Header fill={20} />
             <div className='relative top-20 left-0 w-screen bg-[#dedccf] min-h-[90%] z-10 flex flex-col justify-center items-center'>
-                <p className='text-center text-[#343434] text-4xl font-extralight mb-20'>What kind of exercise do you do?</p>
-                <div className='flex flex-row justify-center items-center'>
+                <p className='text-center text-[#343434] text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20'>What kind of exercise do you do?</p>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"RESISTANCE OR WEIGHT TRAINING"} ans={answer} setAns={setAnswer} />
                     <Option text={"RUNNING"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"CYCLING"} ans={answer} setAns={setAnswer} />
                     <Option text={"YOGA, PILATES"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"DANCE, AEROBICS"} ans={answer} setAns={setAnswer} />
                     <Option text={"SWIMMING"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"TEAM SPORTS"} ans={answer} setAns={setAnswer} />
                     <Option text={"INDIVIDUAL SPORTS"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"ACTIVE LIFESTYLE"} ans={answer} setAns={setAnswer} />
                     <Option text={"OTHER"} ans={answer} setAns={setAnswer} />
                 </div>

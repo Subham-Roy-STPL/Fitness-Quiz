@@ -11,20 +11,20 @@ const Second = () => {
         <div className='relative h-screen'>
             <Header fill={20} />
             <div className='relative top-20 left-0 w-screen bg-[#dedccf] min-h-[90%] z-10 flex flex-col justify-center items-center'>
-                <p className='text-center text-[#343434] text-4xl font-extralight mb-20'>How many times do you do in a week?</p>
-                <div className='flex flex-row justify-center items-center'>
+                <p className='text-center text-[#343434] text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20'>How many times do you do in a week?</p>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"1 Time"} ans={answer} setAns={setAnswer} />
                     <Option text={"2 Times"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"3 Times"} ans={answer} setAns={setAnswer} />
                     <Option text={"4 Times"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"5 Times"} ans={answer} setAns={setAnswer} />
                     <Option text={"6 Times"} ans={answer} setAns={setAnswer} />
                 </div>
-                <div className='flex flex-row justify-center items-center'>
+                <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"7 Times"} ans={answer} setAns={setAnswer} />
                 </div>
             </div>
