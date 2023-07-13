@@ -9,7 +9,7 @@ const Second = () => {
 
     return (
         <div className='relative h-screen'>
-            <Header fill={20} />
+            <Header fill={30} />
             <div className='relative top-20 left-0 w-screen bg-[#dedccf] min-h-[90%] z-10 flex flex-col justify-center items-center'>
                 <p className='text-center text-[#343434] text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20'>How many times do you do in a week?</p>
                 <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>

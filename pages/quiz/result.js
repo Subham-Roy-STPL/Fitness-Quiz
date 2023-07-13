@@ -11,8 +11,6 @@ const Result = () => {
         const ageRegex = /(\d+)-(\d+)\s+years/;
         const [, minAge, maxAge] = ageRange.match(ageRegex).map(Number);
 
-        console.log(minAge, maxAge)
-
         // Define the BMR constants based on gender
         const bmrConstants = {
             Male: { A: 66, B: 6.23, C: 12.7, D: 6.8 },
@@ -45,7 +43,6 @@ const Result = () => {
         };
         const tdee = Object.values(activityLevels).reduce((acc, val) => acc + (val * bmr), 0);
 
-        console.log(bmr, tdee)
         return { bmr, tdee };
     }
 
@@ -59,8 +56,6 @@ const Result = () => {
         let h = Number(data["What is your current height and weight?"]["height"])
         let u = data["What is your current height and weight?"]["unit"]
 
-        console.log({ a, g, w, h, u })
-
         let { bmr, tdee } = calculateBMRAndTDEE(a, g, h, w, u)
         setBmr(bmr)
         setTdee(tdee)
@@ -69,7 +64,7 @@ const Result = () => {
 
     return (
         <div className='relative h-screen'>
-            <Header fill={20} />
+            <Header fill={100} />
             <div className='relative top-20 left-0 w-screen bg-[#dedccf] min-h-[100%] z-10 flex flex-col justify-center items-center'>
                 <p className='text-center text-[#343434] text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20 underline'>Result</p>
                 <p className='text-center text-[#343434] text-2xl font-extralight mb-8'>BMR : { Math.round(bmr).toFixed(2)} calories/day</p>
