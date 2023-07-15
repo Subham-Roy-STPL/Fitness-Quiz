@@ -7,9 +7,6 @@ const Result = () => {
     const [tdee, setTdee] = useState(0)
 
     function calculateBMRAndTDEE(ageRange, gender, height, weight, unit) {
-        // Extract the minimum and maximum ages from the age range
-        const ageRegex = /(\d+)-(\d+)\s+years/;
-        const [, minAge, maxAge] = ageRange.match(ageRegex).map(Number);
 
         // Define the BMR constants based on gender
         const bmrConstants = {
@@ -22,13 +19,13 @@ const Result = () => {
         const { A, B, C, D } = bmrConstants[gender];
         let bmr;
         if (unit === 'Metric') {
-            bmr = A + (B * weight) + (C * height) - (D * ((maxAge + minAge) / 2));
+            bmr = A + (B * weight) + (C * height) - (D * ageRange);
         } else if (unit === 'Imperial') {
             // Convert height from inches to centimeters
             const heightInCm = height * 2.54;
             // Convert weight from pounds to kilograms
             const weightInKg = weight * 0.453592;
-            bmr = A + (B * weightInKg) + (C * heightInCm) - (D * ((maxAge + minAge) / 2));
+            bmr = A + (B * weightInKg) + (C * heightInCm) - (D * ageRange);
         } else {
             throw new Error('Invalid unit specified. Please use "Metric" or "Imperial".');
         }
@@ -50,7 +47,7 @@ const Result = () => {
 
     useEffect(() => {
         const data = JSON.parse(sessionStorage.getItem("answers"))
-        let a = data["How Old Are You?"]
+        let a = Number(data["How Old Are You?"])
         let g = data["How do you identify yourself?"]
         let w = Number(data["What is your current height and weight?"]["weight"])
         let h = Number(data["What is your current height and weight?"]["height"])

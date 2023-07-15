@@ -24,7 +24,7 @@ const Body = () => {
                 <p className='text-gray-800'>Height {opt == "Metric" ? "(cm)" : "(feet)"}</p>
                 <input value={height} type='number' onChange={(e) => { if (!isNaN(e.target.value)) setHeight(e.target.value) }} className='border border-black text-black min-[510px]:w-[500px] w-[300px] text-center py-2 m-5 rounded cursor-pointer focus:bg-white focus:border-none bg-none min-[510px]:text-2xl text-lg font-extralight' />
             </div>
-            <Footer next={"/eating"} question={"What is your current height and weight?"} answer={{ weight, height, unit: opt }} />
+            <Footer next={"/eating"} question={"What is your current height and weight?"} answer={weight==0||height==0?"":{ weight, height, unit: opt }} />
         </div>
     )
 }

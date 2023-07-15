@@ -14,6 +14,7 @@ const Preference = () => {
                 <p className='text-center text-[#343434] text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20'>Do you have any Dietary Preferences ?</p>
                 <Option text={"Veg"} ans={answer} setAns={setAnswer} />
                 <Option text={"Non-Veg"} ans={answer} setAns={setAnswer} />
+                <Option text={"Vegan"} ans={answer} setAns={setAnswer} />
             </div>
             <Footer next={"/health"} question={"Do you have any Dietary Preferences ?"} answer={answer} />
         </div>
