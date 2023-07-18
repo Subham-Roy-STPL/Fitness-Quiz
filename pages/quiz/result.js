@@ -61,14 +61,16 @@ const Result = () => {
 
     return (
         <div className='relative h-screen'>
+             <div className='backgroundOverlayGreen'></div>
+            <div className='backgroundOverlay'></div>
             <Header fill={100} />
-            <div className='relative top-20 left-0 w-screen bg-[#dedccf] min-h-[100%] z-10 flex flex-col justify-center items-center'>
-                <p className='text-center text-[#343434] text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20 underline'>Result</p>
-                <p className='text-center text-[#343434] text-2xl font-extralight mb-8'>BMR : { Math.round(bmr).toFixed(2)} calories/day</p>
-                <p className='text-center text-[#343434] text-2xl font-extralight mb-20'>TDEE : {Math.round(tdee).toFixed(2)} calories/day</p>
-                <p className='text-center text-[#343434] text-2xl font-extralight mb-8'>Protein : {Math.round(bmr*0.3).toFixed(2)}</p>
-                <p className='text-center text-[#343434] text-2xl font-extralight mb-8'>Carbohydrates : {Math.round(bmr*0.4).toFixed(2)}</p>
-                <p className='text-center text-[#343434] text-2xl font-extralight mb-20'>Fat : {Math.round(bmr*0.3).toFixed(2)}</p>
+            <div className='relative top-20 left-0 w-screen bg-transparent min-h-[100%] z-10 flex flex-col justify-center items-center'>
+                <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20 underline'>Result</p>
+                <p className='text-center text-white text-2xl font-extralight mb-8'>BMR : { Math.round(bmr).toFixed(2)} calories/day</p>
+                <p className='text-center text-white text-2xl font-extralight mb-20'>TDEE : {Math.round(tdee).toFixed(2)} calories/day</p>
+                <p className='text-center text-white text-2xl font-extralight mb-8'>Protein : {Math.round(bmr*0.3).toFixed(2)}</p>
+                <p className='text-center text-white text-2xl font-extralight mb-8'>Carbohydrates : {Math.round(bmr*0.4).toFixed(2)}</p>
+                <p className='text-center text-white text-2xl font-extralight mb-20'>Fat : {Math.round(bmr*0.3).toFixed(2)}</p>
             </div>
         </div>
     )
