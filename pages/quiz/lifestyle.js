@@ -15,8 +15,8 @@ const Lifestyle = () => {
              <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={30} />
-            <div className='relative top-20 left-0 w-screen bg-transparent min-h-[120%] z-10 flex flex-col justify-center items-center pb-32'>
-                <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20'>What is your lifestyle?</p>
+            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center pb-32'>
+                <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 '>What is your lifestyle?</p>
                 <Image src={exercise_img} alt='exercise-logo' height={300}/>
                 <Option text={"Sedentary lifestyle"} ans={answer} setAns={setAnswer} />
                 <Option text={"Moderately active lifestyle"} ans={answer} setAns={setAnswer} />

@@ -19,8 +19,8 @@ const Age = () => {
             <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={10} />
-            <div className='relative top-20 left-0 w-screen bg-transparent min-h-[120%] z-10 flex flex-col justify-center items-center'>
-                <p className='text-center text-white text-4xl font-extrabold mb-20 min-[1024px]:mt-0 mt-20'>How old are you?</p>
+            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center'>
+                <p className='text-center text-white text-4xl font-extrabold min-[1024px]:mt-0 mb-20'>How old are you?</p>
                 {answer>0&&answer<=10&&<Image src={a1} height={250} alt='age-group-image'/>}
                 {answer>10&&answer<=20&&<Image src={a2} height={250} alt='age-group-image'/>}
                 {answer>20&&answer<=30&&<Image src={a3} height={250} alt='age-group-image'/>}
@@ -28,7 +28,7 @@ const Age = () => {
                 {answer>40&&answer<=60&&<Image src={a5} height={250} alt='age-group-image'/>}
                 {answer>60&&<Image src={a6} height={250} />}
                 <p className='text-center text-white text-xl font-extralight mb-5'>{answer} {answer==1?'year old':'years old'}</p>
-                <input type="range" min={1} max={130} className='w-[300px] mb-20' value={answer} onChange={(e) => { setAnswer(e.target.value) }} />
+                <input type="range" min={1} max={130} className='w-[300px]' value={answer} onChange={(e) => { setAnswer(e.target.value) }} />
             </div>
             <Footer next={"/gender"} question={"How Old Are You?"} answer={answer} />
         </div>

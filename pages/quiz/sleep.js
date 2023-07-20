@@ -11,8 +11,8 @@ const Sleep = () => {
              <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={90} />
-            <div className='relative top-20 left-0 w-screen bg-transparent min-h-[120%] z-10 flex flex-col justify-center items-center'>
-                <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 mt-20'>How many hours do you sleep?</p>
+            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center'>
+                <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 '>How many hours do you sleep?</p>
                 <p className='text-center text-white text-xl font-extralight mb-5'>{sleep} {sleep==1?"hour":"hours"}</p>
                 <input type="range" min={0} max={12} className='w-[300px]' value={sleep} onChange={(e) => { setSleep(e.target.value) }} />
             </div>
