@@ -18,7 +18,7 @@ const Preference = () => {
                 <Option text={"Non-Veg"} ans={answer} setAns={setAnswer} />
                 <Option text={"Vegan"} ans={answer} setAns={setAnswer} />
             </div>
-            <Footer next={"/health"} question={"Do you have any Dietary Preferences ?"} answer={answer} />
+            <Footer next={"/allergy"} question={"Do you have any Dietary Preferences ?"} answer={answer} />
         </div>
     )
 
