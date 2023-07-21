@@ -28,7 +28,7 @@ const Footer = ({ next, question, answer }) => {
     }
 
     return (
-        <div className='w-screen flex flex-row justify-center items-center fixed bottom-0 left-0 z-20'>
+        <div className='w-screen flex flex-row justify-center items-center'>
              <p className='text-[#333333] bg-[#dedccf] py-3 min-[500px]:px-20 px-10 font-semibold rounded-[30px] cursor-pointer my-5 mx-5' onClick={()=>{router.back()}}>
                 PREVIOUS
             </p>

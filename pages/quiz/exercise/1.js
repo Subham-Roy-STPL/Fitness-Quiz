@@ -32,7 +32,7 @@ const First = () => {
             <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={30} />
-            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center'>
+            <div className='w-screen bg-transparent mt-16 mb-12 flex flex-col justify-center items-center'>
                 <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 '>What kind of exercise do you do?</p>
                 <div className='flex min-[1024px]:flex-row flex-col justify-center items-center'>
                     <Option text={"RESISTANCE OR WEIGHT TRAINING"} ans={answer} setAns={setAnswer} />

@@ -15,7 +15,7 @@ const Gender = () => {
              <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={20} />
-            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center'>
+            <div className='w-screen bg-transparent mt-16 mb-12 flex flex-col justify-center items-center'>
                 <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 '>How do you identify yourself?</p>
                 <Option text={"Male"} ans={answer} setAns={setAnswer} />
                 <Option text={"Female"} ans={answer} setAns={setAnswer} />

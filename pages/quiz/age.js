@@ -19,7 +19,7 @@ const Age = () => {
             <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={10} />
-            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center'>
+            <div className='w-screen bg-transparent mt-16 mb-12 flex flex-col justify-center items-center'>
                 <p className='text-center text-white text-4xl font-extrabold min-[1024px]:mt-0 mb-20'>How old are you?</p>
                 {answer>0&&answer<=10&&<Image src={a1} height={250} alt='age-group-image'/>}
                 {answer>10&&answer<=20&&<Image src={a2} height={250} alt='age-group-image'/>}

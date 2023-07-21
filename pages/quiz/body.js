@@ -15,7 +15,7 @@ const Body = () => {
              <div className='backgroundOverlayGreen'></div>
             <div className='backgroundOverlay'></div>
             <Header fill={50} />
-            <div className='relative top-20 left-0 w-screen bg-transparent mt-16 z-10 flex flex-col justify-center items-center'>
+            <div className='w-screen bg-transparent mt-16 mb-12 flex flex-col justify-center items-center'>
                 <p className='text-center text-white text-4xl font-extralight mb-20 min-[1024px]:mt-0 '>What is your current height and weight?</p>
                 <div className='flex flex-row'>
                     <p onClick={() => { setOpt("Imperial") }} className={`border border-white w-[100px] text-center py-1 m-5 rounded cursor-pointer ${opt == "Imperial" ? "bg-white text-black" : "hover:bg-white text-white hover:text-black"} duration-500 text-lg font-extralight`}>IMPERIAL</p>

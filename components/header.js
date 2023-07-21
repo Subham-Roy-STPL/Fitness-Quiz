@@ -9,7 +9,7 @@ const Header = ({ fill }) => {
     const router = useRouter()
 
     return (
-        <div className='w-screen fixed top-0 left-0 z-20'>
+        <div className='w-screen'>
             <div className='w-full flex flex-row justify-between items-center px-10 py-2'>
                 <div className='w-[20px]'>
                 </div>
